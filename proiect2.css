@@ -1,0 +1,183 @@
+html {
+    height: 200%;
+    
+}
+
+body {
+    background-image:linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    min-height: 200%;
+    display: flex;
+    flex-direction: column;
+    cursor: url('images/iconmonstr-umbrella-13.svg'), default ;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 1.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient( 145deg, #1a2a6c, #b21f1f, #fdbb2d);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+   
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+}
+
+
+
+.text-box {
+    z-index: 2;
+    /* width: 400px; */
+    color: white;
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    text-align: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    width: 50%;
+    height: 80vh;
+    border-radius: 10px;
+    font-family: 'Petit Formal Script', cursive;
+   
+}
+
+.text-box h1 {
+    margin-top: 30px;
+}
+
+.text-box p {
+    text-align: left;
+    padding: 10%;
+    background: linear-gradient(to right, #b21f1f, #fdbb2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.text-box a{
+    font-family: 'Poppins', cursive;
+    text-decoration: none;
+    border-radius: 100px 100px;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(to right, #1a2a6c , #b21f1f, #fdbb2d);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    border: 2px solid #B96D40;
+
+}
+
+.text-box a:hover {
+    background-image: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    background-position: right;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+.card-list {
+
+    position: relative;
+    top: 950px;
+    left: 10%;
+    
+    /* left: 10%; */
+    color: white;
+    width: 80%;
+    /* margin: auto; */
+    /* text-align: center; */
+    /* margin-top: 60%; */
+    display: flex;
+    padding: 3rem;
+    font-family: 'Petit Formal Script', cursive;
+    z-index: 2;  
+}
+
+.card {
+    
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 300px;
+    width: 800px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-image:linear-gradient(to right, #41295a, #2F0743) ;
+    box-shadow: -1rem 0 3rem #000;
+    transition: .2s;
+    border: 2px solid #B96D40;
+    
+
+}
+
+                               /* .card-list::-webkit-scrollbar {
+                                    width: 10px;
+                                    height: 10px;
+                                         }
+
+                               . card-list::-webkit-scrollbar-thumb {
+                                        background-image:  linear-gradient(to right, #434343 0%, black 100%);
+                                        border-radius: 10px;
+                                        box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+                                                      }
+
+                                 .card-list::-webkit-scrollbar-track {
+    
+
+                                  }  */
+
+ .card:hover {
+    transform: translateY(-1rem);
+    rotate: 5deg;
+}
+
+.card:hover~.card {
+    transform: translateX(50px);
+    
+}
+
+.card:not(:first-child) {
+    margin-right: -40px;
+    
+} 
+
+
+
+
+/* 
+ .spacer1 {
+    aspect-ratio: 960/500;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 70;
+}
+
+.layer1 {
+    background-image: url('images/valuri.mijloc.svg');
+}  */
